@@ -1,0 +1,8 @@
+Topics
+1. Arrays and their properties.
+2. Array methods.
+3. Multidimensional Arrays.
+4. Objects in JavaScript.
+5. Working with Objects and Arrays.
+
+
