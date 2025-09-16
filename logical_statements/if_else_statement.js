@@ -20,7 +20,6 @@ else{
     alert(`The shape is very big it has ${area}m2`);
 }
 
-
 /*
  Practice exercise 4.2
  1. Create a prompt to ask the user's age
@@ -34,4 +33,5 @@ confirm entry to the venue but deny the purchase of alcohol
  6. Provide a default else statement to set the message variable to deny entry if 
 none are true
  7. Output the response message variable to the console
+
 */
