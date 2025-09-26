@@ -1,0 +1,91 @@
+Topics:
+> Basic functions
+> Function arguments
+> Return
+> Variable scope in functions
+> Recursive functions
+> Nested functions
+> Anonymous functions
+> Function callbacks
+
+Basic functions
+- We have built in functions that we have explored example: 
+    prompt(), log(), push(), shift(), sort()
+- These function are predefined in the javascript compiler
+- The function definition part is hidden from us we are only interacting with the function 
+calling only.
+
+User Defined functions
+- These are functions that we take part in creating both the function definition and the function calling.
+
+function definition
+
+function definiton syntax:
+
+    function nameOfTheFunction(){
+        // content of the function or body of the function
+    }
+
+    - function definition starts with the keyword "function" followed by the function name, which must be
+    a valid identifier.
+    - after the function name we have a bracket ( ) inside the bracket we can have parameter or not.
+    - after bracket we have the opening culry bracket "{" and closing curly bracket "}" inside them we have the
+    function block of code that is executed when the function is called.
+    - a function definition cannot be executed before until you perfrom a function call.
+
+    example of a function without parameter in side the bracket
+    function sayHello(){
+        //block of code goes here...
+    }
+
+    example of a function with paremeters
+    function hello(parameter1, parameter2){
+        //block of code goes here...
+    }
+
+    what is a paremeter 
+        paremeter - is a variable that gets initialized with the value supplied as argument
+        during function calling.
+        argument - is a value supplied during function calling to initialize the parameter
+
+function calling
+ - this is calling the function that you have Defined. There are severa ways a function call is performed
+ - the function name used in the definition must be the same as the name used in calling inconsisitency will result 
+ in syntax error.
+    a) Simple call
+        this is the situation where there is no parameter in the function call in other words those function without
+        parameters are termed as void, is called. here the the function name is supplied with empty brackets.
+        
+        // function definition
+        function sayHello(){
+        console.log("Hello);
+        }
+
+        // function calling
+        sayHello(); // just called the function directly.
+
+
+    a) call by value
+    this is where you supply the values directly inside the brackets of a function call.
+
+        // parameter function
+        function rectangle(length, width){
+        let area = length * width;
+        console.log(area);
+        }
+
+        // function calling
+        rectangle(67, 40);
+
+
+    b) call by reference
+        // function definition
+        function rectangle(length, width){
+            let area = length * width;
+            console.log(area);
+        }
+
+        // function calling
+        let l = 80;
+        let w = 45;
+        rectangle(l , w);
