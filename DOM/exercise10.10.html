@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="message">Shopping</div>
+
+    <div>
+        <input type="text" id="addItem">
+        <input type="button" id="AddNew" value="Add to List">
+    </div>
+
+    <div id="output">
+        <h1>Shopping List</h1>
+        <ol id="sList"> </ol>
+    </div>
+
+
+    <script>
+
+        // where to add the event listener.
+        document.getElementById("AddNew").addEventListener("click", output);
+      
+
+        function output(){
+               // add item input box.
+                let input = document.getElementById("addItem");
+
+                // list element.
+                let list = document.getElementById("sList");
+
+                if(input.value.trim() !== ""){
+                    // created a list element.
+                    let list_element = document.createElement("li");
+                
+
+                    // add values to the list
+                    list_element.innerHTML=`<ul><li>${input.value}</li></ul>`;
+
+                    // append the newly created item to the body.
+                    document.body.appendChild(list_element);
+
+                     //clear the input box
+                     input.value = "";
+                }
+
+                else{
+                    alert("Please enter an item first!");
+                }
+
+              
+               
+        }
+
+
+    
+
+    </script>
+</body>
+</html>

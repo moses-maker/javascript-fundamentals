@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating element</title>
+</head>
+<body>  
+
+    <h1>Rainbow</h1>
+
+     <script>
+        function rainbowify(){
+            let divs = document.getElementsByTagName("div");
+            console.log(divs);
+
+            for(let i = 0; i<divs.length; i++){
+                divs[i].style.backgroundColor=divs[i].id;
+            }
+        }
+    </script>
+
+    <style>
+        div{
+            height:300px;
+            width:300px;
+            background-color: rgb(18, 4, 4);
+        }
+    </style>
+
+    <div id="red"></div>
+    <div id="orange"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+    <div id="indigo"></div>
+    <div id="violet"></div>
+
+    <button onclick="rainbowify()">Make me a rainbow</button>
+
+   
+    
+</body>
+</html>

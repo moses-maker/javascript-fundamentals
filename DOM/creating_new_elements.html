@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+    You can create new element and add them to the DOM
+    follow the following steps
+    a)create a new element
+    to create a new element we use the
+        let el = document.createElement()
+
+    to add some text onside the element opening and closing tags we use
+        el.innerText = Math.floor(Math.random()*100);
+    b)add them tothe DOM
+        to add the elmeent to the DOM we have to use
+            document.body.appendChild(el);
+    
+    -->
+
+    <script>
+        function addRandomNumber(){
+            let element = document.createElement("p");
+            element.innerText = Math.floor(Math.random() * 100);
+            document.body.appendChild(element);
+        }
+    </script>
+
+    <button onclick="addRandomNumber()">Add a Number</button>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manioulating atributes</title>
+</head>
+<body>
+    <!--
+    MANIPULATING ATTRIBUTES
+
+    Example:
+    <a id="friend" class="fancy boxed" href="https://www.google.com">Ask my friend here.</a>
+
+    - An attribute is a variable found in the opening tag of the element.
+    - In the Example above attributes include: 
+        id, class, href, src, style.
+    - setAttribute() method- can be used to add or change attributes on an element.
+    -->
+    <script>
+        function changeAttr(){
+            let element = document.getElementById("shape");
+            element.setAttribute("style", "background-color:red; border:1px dashed black");
+            element.setAttribute("id", "new");
+            element.setAttribute("class", "circle");
+        }
+    </script>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+        }
+
+        .circle{
+            border-radius: 50%;
+        }
+    </style>
+
+    <div id="shape" class="square"></div>
+    
+    <button onclick="changeAttr()">Change attributes...</button>
+    
+</body>
+</html>

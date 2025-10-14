@@ -1,0 +1,5 @@
+Basic DOM traversing
+- DOM can be traversed using "document" objec which contains all the HTML and is 
+a representation  of the web page.
+- Traversing over elements can get you to the lement you need in order to manipulate it.
+

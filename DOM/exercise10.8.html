@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="message"></div>
+
+    <div id="output"></div>
+
+    <script>
+        let list = ["moses", "jude", "james", "lucy", "peter", "john", "faith", "gabriel", "mary"];
+
+        message = document.getElementById("message");
+        output = document.getElementById("output");
+
+         
+        let html = "<html> <table border='1'><tr><th>Name</th><th>Position</th</tr>";
+        
+        // function call
+        build();
+
+        function build(){
+            for(let i = 0; i<list.length; i++){
+                html += `<tr><td>${list[i]}</td><td>${i+1}</tr>`;      
+            }
+            message.innerHTML = `${html} </table>`;
+        }
+    </script>
+
+    
+</body>
+</html>
